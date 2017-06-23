@@ -44,7 +44,7 @@ My program follows the general processing as taught in the lessons.
 This can be found in the ukf.cpp file in the src folder.
 
 # Smell Test
-1. For not using C++ in 7 years, this was rough to follow at first. I can't wait to improve.
+1. Most of the code was provided for me, so if it doesn't pass the smell test...I don't know.
 
 ### Discussion
 The Unscented Kalman Filter is yet another amazing and powerful tool. I learned that setting Process noise standard deviations can be quite the chore.
