@@ -7,7 +7,6 @@ using Eigen::MatrixXd;
 using Eigen::VectorXd;
 using std::vector;
 
-/**
  * Initializes Unscented Kalman filter
  */
 UKF::UKF() {
@@ -347,8 +346,8 @@ void UKF::UpdateLidar(MeasurementPackage meas_package) {
 
 	//add measurement noise covariance matrix
 	MatrixXd R = MatrixXd(n_z, n_z); //fixed
-	R << std_laspx_, 0,
-		0, std_laspy_;
+	R << std_laspx_*std_laspx_, 0,
+        	0, std_laspy_*std_laspy_;
 	S = S + R;
 
 	//create matrix for cross correlation Tc
